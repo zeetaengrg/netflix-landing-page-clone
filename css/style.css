@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;500;600;700&display=swap');
+
+/* Custom Properties */
+
+:root {
+    --h2-font-size: 3rem;
+    --h3-font-size: 1.7rem;
+    --p-font-size: 1.2rem;
+
+    --h2-font-weight: 600;
+    --h3-font-weight: 500;
+    --p-font-weight: 500;
+
+    --btn-color: hsl(0, 88%, 44%);
+    --h2-color: hsl(0, 0%, 100%);
+    --h3-color: hsl(0, 0%, 93%);
+    --p-color: hsl(0, 0%, 90%);
+    --footer-font-color: hsl(0, 0%, 45%);
+}
+
+/* Reset */
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Base Styling */
+
+html,
+body {
+    font-family: 'Encode Sans', sans-serif;
+    background-color: black;
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+    font-weight: var(--h2-font-weight);
+    color: var(--h2-color);
+    line-height: 1.1;
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+    font-weight: var(--h3-font-weight);
+    color: var(--h3-color);
+}
+
+p {
+    font-size: var(--p-font-size);
+    font-weight: var(--p-font-weight);
+    color: var(--p-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.btn {
+    background: var(--btn-color);
+    text-align: center;
+    padding: 0.5rem 1.3rem;
+    color: hsl(0, 0%, 100%);
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    outline: none;
+    transition: 0.2s ease-in;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+/* Header Content Styling */
+
+.header {
+    background: url(../images/background.jpg) no-repeat center center / cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+
+.header::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    color: hsl(30, 1%, 29%);
+}
+
+.header-top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+    z-index: 2;
+}
+
+.header .header-top > img {
+    height: 35px;
+    width: 130px;
+}
+
+.header .header-top > a {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.header .header-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 100px 350px 0;
+}
+
+.header .header-subcontent {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.header-content h3 {
+    margin: 15px 0;
+}
+
+.header-subcontent p {
+    margin: 25px 0;
+}
+
+.header-subcontent form input {
+    height: 60px;
+    width: 500px;
+    font-size: 1.2rem;
+    padding-left: 15px;
+    /* transition: font .1s ease,top .1s ease,transform .1s ease,-webkit-transform .1s ease,-moz-transform .1s ease,-o-transform .1s ease; */
+    /* transform: translateY(-50%); */
+}
+
+.header-subcontent form a {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px 0;
+    font-size: 1.6rem;
+    border-radius: 3px;
+    width: 200px;
+}
+
+.header-subcontent form a:hover {
+    background: hsl(0, 95%, 52%);
+    opacity: 1;
+}
+
+.header-subcontent form a > i {
+    margin-left: 10px;
+}
+
+
+
+/* Media Querries Responsiveness */
+
+@media (max-width: 1100px) {
+    .header .header-content {
+        padding: 100px 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .header-top {
+        padding: 25px 30px;
+    }
+
+    .header .header-top > img {
+        height: 25px;
+        width: 100px;
+    }
+
+    .header .header-top > a {
+        font-size: 0.9rem;
+        padding: 5px 10px;
+    }
+
+    .header .header-content {
+        padding: 60px 20px;
+    }
+
+    .header .header-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .header-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .header .header-subcontent p {
+        margin-top: -40px;
+        font-size: 0.99rem;
+    }
+}
+
+
