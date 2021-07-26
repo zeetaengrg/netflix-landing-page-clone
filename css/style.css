@@ -41,6 +41,7 @@ h2 {
     font-weight: var(--h2-font-weight);
     color: var(--h2-color);
     line-height: 1.1;
+    padding-bottom: 20px;
 }
 
 h3 {
@@ -105,15 +106,6 @@ img {
     box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
 }
 
-.header::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 20px;
-    color: hsl(30, 1%, 29%);
-}
-
 .header-top {
     position: relative;
     display: flex;
@@ -168,8 +160,6 @@ img {
     width: 500px;
     font-size: 1.2rem;
     padding-left: 15px;
-    /* transition: font .1s ease,top .1s ease,transform .1s ease,-webkit-transform .1s ease,-moz-transform .1s ease,-o-transform .1s ease; */
-    /* transform: translateY(-50%); */
 }
 
 .header-subcontent form a {
@@ -187,11 +177,186 @@ img {
     opacity: 1;
 }
 
+.header-subcontent form a:active {
+    transform: scale(0.98);
+}
+
 .header-subcontent form a > i {
     margin-left: 10px;
 }
 
+/* TV Container Content Styling */
 
+.tv-container {
+    height: 75vh;
+}
+
+.tv-container::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 8px;
+    background-color: hsl(0, 0%, 17%);
+}
+
+.movies-container {
+    display: flex;
+}
+
+.movies-text {
+    width: 50%;
+    padding: 150px 10px 0 120px;
+}
+
+.movies-animation-container {
+    width: 50%;
+    padding: 0 80px 0 50px;
+}
+
+/* Mobile Download Container Content Styling */
+
+.download-container::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 8px;
+    background-color: hsl(0, 0%, 17%);
+}
+
+.download-container .mobile-container {
+    display: flex;
+}
+
+.download-container .mobile-img-container {
+    width: 50%;
+    position: relative;
+}
+
+.mobile-img-container > img {
+    height: 400px;
+    width: 500px;
+    margin: 30px auto;
+    display: block;
+}
+
+.mobile-img-container .item-download-container {
+    border: 2px solid hsl(0, 0%, 45%);
+    border-radius: 15px;
+    display: flex;
+    padding: 10px 10px;
+    margin: 20px auto;
+    width: 60%;
+    min-width: 15em;
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    background: #000;
+    /* -moz-box-align: center; */
+    transform: translateX(-50%);
+}
+
+.mobile-img-container .item-download-container::after {
+    content: "";
+    display: block;
+    width: 8em;
+    margin: 0 auto;
+    /* background-size: 100%; */
+    /* outline: 2px solid #000; */
+    /* outline-offset: -2px; */
+    background: url(../images/download-icon.gif) no-repeat center center;
+}
+
+.mobile-img-container .item-download-container > img {
+    height: 80px;
+    width: 60px;
+    margin-right: 15px;
+}
+
+.item-download-container .download-title-display {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+}
+
+.item-download-container .download-title-display > h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+}
+
+.item-download-container .download-title-display > p {
+    color: hsl(240, 100%, 50%);
+    font-size: 0.95rem;
+    font-weight: 200;
+    
+}
+
+.download-container .mobile-text {
+    width: 50%;
+    padding: 150px 130px 0 10px;
+}
+
+/* Everywhere Container Styling */
+
+.everywhere-container::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 8px;
+    margin-top: 25px;
+    background-color: hsl(0, 0%, 17%);
+}
+
+.everywhere-container-content {
+    padding: 40px 100px;
+    width: 55%;
+}
+
+/* Kids Profile Container Content Styling */
+
+.kids-profile-container::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 8px;
+    margin-top: 25px;
+    background-color: hsl(0, 0%, 17%);
+}
+
+.kids-profile-container .kids-profile-content {
+    display: flex;
+}
+
+.kids-profile-content .kids-profile-img {
+    width: 50%;
+    margin: 0 auto;
+    padding: 70px 10px 30px 100px;
+}
+
+.kids-profile-content .kids-profile-text {
+    width: 50%;
+    padding: 150px 90px;
+}
+
+/* Questions Container Content Styling */
+
+.questions-container::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 8px;
+    margin-top: 25px;
+    background-color: hsl(0, 0%, 17%);
+}
+
+.questions-container .questions-container-content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.questions-container .questions-title {
+
+}
 
 /* Media Querries Responsiveness */
 
