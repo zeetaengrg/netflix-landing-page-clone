@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
  <body>
-    <header class="header">
+    <header class="header" id="top">
         <div class="header-top">
             <img src="/images/logo.png" alt="Netflix Logo">
             <a href="#" class="btn sign-in-btn">Sign In</a>
@@ -44,8 +44,7 @@
                 <div class="movies-card-display">
                     <img class="movies-card-img" src="/images/tv.png" alt="TV Box Image">
                     <div class="movies-card-animation">
-                        <video src="movies-card-video" autoplay="" loop="" muted="">
-                            <source src="/images/video-tv-0819.m4v" type="video/mp4">
+                        <video src="/images/video-tv-0819.m4v" autoplay="" loop="" muted="">
                         </video>
                     </div>
                 </div>
@@ -62,6 +61,9 @@
                     <div class="download-title-display">
                         <h5 class="show-title">Stranger Things</h5>
                         <p class="downloading-text">Downloading...</p>
+                    </div>
+                    <div class="downloading-image">
+                        <img src="/images/download-icon.gif" alt="Downloading Icon">
                     </div>
                 </div>
             </div>
@@ -232,7 +234,6 @@
             </div>
         </div>
     </footer>
-
     <script src="/script/main.js"></script>
  </body>
  </html>
