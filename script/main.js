@@ -1,26 +1,13 @@
-const faqQuestion = document.querySelectorAll(".faq-questions");
-const faqAnswer = document.querySelectorAll(".faq-answer");
+// const faqQuestions = document.getElementsByClassName("faq-questions");
 
-function selectContent(e) {
-    showAnswer();
-    hideAnswer();
-
-    // this.classList.
-}
-
-function hideAnswer() {
-    faqAnswer.forEach(item => {
-        item.classList.remove("faq-answer");
-    });
-}
-
-function showAnswer() {
-    faqAnswer.forEach(item => {
-        item.classList.add("faq-answer");
-    });
-}
-
-// Listen for faq-question button click
-faqAnswer.forEach(item => {
-    item.addEventListener("click", selectContent);
-});
+// for (let i = 0; i < faqQuestions.length; i++) {
+//     faqQuestions[i].addEventListener("click", function() {
+//         this.classList.toggle("active");
+//         const faqAnswer = this.nextElementSibling;
+//         if(faqAnswer.style.display === "block") {
+//             faqAnswer.style.display = "none";
+//         } else {
+//             faqAnswer.style.display = "block";
+//         }
+//     })
+// }
