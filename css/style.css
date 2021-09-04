@@ -405,11 +405,12 @@ li {
     margin: 50px;
 }
 
-input {
+/* Accordion Styling and Animation */
+.accordion input {
     display: none;
 }
 
-label {
+.accordion label {
     display: block;
     cursor: pointer;
     background: hsl(0, 0%, 19%);
@@ -418,14 +419,28 @@ label {
     padding: 1rem;
     font-size: 1.6rem;
     transition: ease 0.5s;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.1rem;
     position: relative;
     z-index: 1;
     user-select: none;
+    min-width: 25rem;
 }
 
 label > i {
-    float: right;
+    position: absolute;
+    left: 95%;
+}
+
+input:checked + label .fa-plus {
+    opacity: 0;
+}
+
+.fa-times {
+    opacity: 0;
+}
+
+input:checked + label .fa-times {
+    opacity: 1;
 }
 
 .answer {
@@ -442,6 +457,7 @@ label > i {
 }
 
 input + label + .answer {
+    /* opacity: 0; */
     display: none;
     height: 0;
     font-size: 0;
@@ -449,11 +465,13 @@ input + label + .answer {
 }
 
 input:checked + label + .answer {
+    /* opacity: 1; */
     display: block;
     height: max-content;
     font-size: 1.6rem;
 }
 
+/* FAQ subsection styling */
 .faq-container .header-subcontent {
     position: relative;
     z-index: 2;
