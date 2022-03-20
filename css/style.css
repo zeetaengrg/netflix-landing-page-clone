@@ -96,7 +96,6 @@ li {
 }
 
 /* Header Content Styling */
-
 .header {
     background: url(../images/background.jpg) no-repeat center center / cover;
     height: 100vh;
@@ -783,4 +782,3 @@ input:checked + label + .answer {
         padding: 80px 0 40px;
     }
 }
-
