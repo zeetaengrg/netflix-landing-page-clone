@@ -292,14 +292,14 @@ li {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     padding: 10px 10px;
-    margin: 20px auto;
     width: 50%;
     min-width: 15em;
     position: absolute;
-    left: 40%;
-    bottom: 0.5%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0.15rem;
     background: #000;
-    transform: translateX(-50%);
 }
 
 .mobile-img-container .item-download-container > img {
