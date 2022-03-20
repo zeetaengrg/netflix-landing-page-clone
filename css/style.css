@@ -565,21 +565,24 @@ input:checked + label + .answer {
     font-weight: 400;
 }
 
-/* Media Querries Responsiveness */
+/********MEDIA QUERIES*******/
 
-@media (max-width: 1200px) {
+/* Desktop */
+@media screen and (max-width: 1024px) {
+    /* Header Section */
     .header {
-        height: 60vh;
+        height: 50vh;
     }
 
     .header .header-content {
-        padding: 100px 150px 0;
+        padding: 6.25rem 9.375rem 0;
     }
 }
 
+/* Tablet */
 @media (max-width: 900px) {
     .header .header-content {
-        padding: 100px 100px 0;
+        padding: 6.25rem 6.25rem 0;
     }
 
     .header {
